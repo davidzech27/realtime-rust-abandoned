@@ -1,0 +1,28 @@
+[package]
+name = "realtime"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.24.2", features = ["full"] }
+futures-util = { version = "0.3.25", features = ["default"] }
+futures-channel = { version = "0.3.25", features = ["default"] }
+tokio-tungstenite = "0.18.0"
+tungstenite = "0.18.0"
+dotenv = "0.15.0"
+jsonwebtoken = "8.2.0"
+serde = "1.0.152"
+thiserror = "1.0.38"
+serde_json = "1.0.91"
+scylla = "0.7.0"
+nats = "0.23.1"
+chrono = { version = "0.4.23", features = ["alloc", "std", "clock", "serde"] }
+md5 = "0.7.0"
+base64 = "0.21.0"
+rand = "0.8.5"
+tracing-subscriber = "0.3.16"
+tracing = "0.1.37"
+
+
